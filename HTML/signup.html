@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+
+    <link rel="stylesheet" href="../CSS/signup.css">
+</head>
+
+<body>
+
+    <form class="signup_form" name="form" action="success.html" method="post" onSubmit="return validated()">
+        <div class="container"></div>
+        <h1>Sign Up</h1>
+        <div class="name">Username</div>
+        <input autocomplete="off" type="text" id="name" name="name"><br>
+        <div id="name_error">Please enter your Username (min length 5)</div>
+        <div class="email">Email</div>
+        <input autocomplete="off" type="text" id="email" name="email" placeholder="example@abc.com"><br>
+        <div id="email_error">Please enter your Email</div>
+        <div class="pass">Password</div>
+        <input type="password" id="password" name="password"><br>
+        <div id="pass_error">Please enter your Password (min 8 digits)</div>
+        <button type="submit">Sign Up</button>
+        </div>
+    </form>
+    <script src="../Validation/signup.js"></script>
+</body>
+
+</html>

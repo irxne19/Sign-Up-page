@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css?family=Abel|Abril+Fatface|Alegreya|Arima+Madurai|Dancing+Script|Dosis|Merriweather|Oleo+Script|Overlock|PT+Serif|Pacifico|Playball|Playfair+Display|Share|Unica+One|Vibur');
+*{
+	padding: 0;
+	margin: 0;
+}
+body{
+	background: url(bg.jpg) no-repeat;
+	background-size: cover;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	
+}
+form {
+    width: 400px;
+    min-height: 400px;
+    height: auto;
+    border-radius: 5px;
+    margin: 1.5% auto;
+    box-shadow: 0 9px 50px hsla(20, 67%, 75%, 0.31);
+    padding: 2%;
+    background: rgba( 255, 255, 255, 0.45 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 7.5px );
+    -webkit-backdrop-filter: blur( 7.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.container{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+      margin: 0 auto;
+}
+
+h1{
+    margin: 2% auto 10% auto;
+    text-align: center;
+	font-family: 'Vibur', cursive;
+}
+
+button {
+    display: flex;
+    color: #252537;
+	justify-content: center;
+	align-items: center;
+  
+    width: 280px;
+    height: 50px;
+  
+    padding: 0 20px;
+    background: rgb(250, 250, 250);
+    border-radius: 5px;
+    
+    outline: none;
+    border: none;
+  
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.2s linear;
+    
+    margin: 14% auto;
+    letter-spacing: 0.05em;
+
+	font-size: 17px;
+	font-weight: bold;
+	font-family: 'Abel', sans-serif;
+
+}
+
+button:hover {
+    transform: translatey(3px);
+    box-shadow: none;
+}
+
+/* buttons hover Animation */
+button:hover {
+    animation: ani9 0.4s ease-in-out infinite alternate;
+}
+@keyframes ani9 {
+    0% {
+        transform: translateY(3px);
+    }
+    100% {
+        transform: translateY(5px);
+    }
+}
+
+.signup_form input{
+	height: 40px;
+	width: 350px;
+	padding: 0 7px;
+	font-size: 18px;
+	outline: none;
+	margin-left:4%;
+	border: 1px solid silver;
+	font-family: 'Abel', sans-serif;
+}
+.signup_form .pass,.signup_form .email,.signup_form .name,.signup_form #name_error,.signup_form #email_error,.signup_form #pass_error{
+	margin-top: 30px;
+	font-size:18px;
+	margin-bottom: 15px;
+	margin-left:4%;
+	font-family: 'Abel', sans-serif;
+	font-weight: bold;
+}
+
+.signup_form #email_error,
+.signup_form #pass_error,
+.signup_form #name_error{
+	margin-top: 5px;
+	width: 345px;
+	font-size: 18px;
+	color: #C62828;
+	background: rgba(255,0,0,0.1);
+	text-align: center;
+	padding: 5px 8px;
+	border-radius: 3px;
+	border: 1px solid #EF9A9A;
+	display: none;
+}
