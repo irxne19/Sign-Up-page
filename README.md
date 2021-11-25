@@ -14,6 +14,6 @@ A simple sign up page using HTML,CSS and JS with input field validation
 ![Validation for Email](../master/screenshots/img3.png)
 
 ### Validation for Password
-![Validation for Password](../master/screenshots/img4.png)
+![Validation for Password ](../master/screenshots/img4.png)
 
 
